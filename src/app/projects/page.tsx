@@ -15,7 +15,7 @@ export default function ProjectsPage() {
           
           {/* Progress Section */}
           <div className="flex items-center gap-4">
-            <div className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-1 rounded-full text-sm font-medium">
+            <div className="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-100 px-4 py-1 rounded-full text-sm font-medium">
               First Draft (Rewrite)
             </div>
             <div className="text-gray-600 dark:text-gray-300 font-mono">
@@ -26,7 +26,7 @@ export default function ProjectsPage() {
           {/* Progress Bar */}
           <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
             <div 
-              className="bg-blue-500 h-2.5 rounded-full transition-all duration-500" 
+              className="bg-purple-500 h-2.5 rounded-full transition-all duration-500" 
               style={{ width: `${progressPercentage}%` }}
               title={`${progressPercentage}% of target word count`}
             />
@@ -46,17 +46,17 @@ export default function ProjectsPage() {
           <dl className="grid grid-cols-2 gap-4 text-sm">
             <div>
               <dt className="text-gray-500 dark:text-gray-400">Target Word Count</dt>
-              <dd className="font-medium">{targetWordCount.toLocaleString()}</dd>
+              <dd className="font-medium text-purple-600 dark:text-purple-300">{targetWordCount.toLocaleString()}</dd>
             </div>
             <div>
               <dt className="text-gray-500 dark:text-gray-400">Started</dt>
-              <dd className="font-medium">May 2024</dd>
+              <dd className="font-medium text-purple-600 dark:text-purple-300">May 2024</dd>
             </div>
           </dl>
 
           {/* Progress Stats */}
           <div className="text-sm text-gray-500 dark:text-gray-400">
-            {progressPercentage}% complete • {(targetWordCount - currentWordCount).toLocaleString()} words remaining
+            <span className="text-purple-600 dark:text-purple-300 font-medium">{progressPercentage}% complete</span> • {(targetWordCount - currentWordCount).toLocaleString()} words remaining
           </div>
         </div>
       </div>

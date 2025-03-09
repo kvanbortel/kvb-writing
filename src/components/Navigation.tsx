@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 const MENU_ITEMS = [
-  { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projects' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
@@ -24,8 +23,8 @@ export function Navigation() {
           <Link
             key={item.href}
             href={item.href}
-            className={`text-sm font-medium hover:text-gray-600 dark:hover:text-gray-300 transition-colors ${
-              pathname === item.href ? 'text-black dark:text-white' : 'text-gray-500 dark:text-gray-400'
+            className={`text-sm font-medium hover:text-gray-200 transition-colors ${
+              pathname === item.href ? 'text-white' : 'text-gray-300'
             }`}
           >
             {item.label}
@@ -36,7 +35,7 @@ export function Navigation() {
       {/* Mobile Navigation */}
       <div className="md:hidden">
         <button
-          className="p-2 hover:bg-black/[.05] dark:hover:bg-white/[.06] rounded-lg transition-colors"
+          className="p-2 hover:bg-white/10 rounded-lg transition-colors text-white"
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -50,7 +49,7 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={`block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
-                  pathname === item.href ? 'text-black dark:text-white font-medium' : 'text-gray-500 dark:text-gray-400'
+                  pathname === item.href ? 'text-black dark:text-white font-medium' : 'text-gray-600 dark:text-gray-400'
                 }`}
                 onClick={() => setIsOpen(false)}
               >

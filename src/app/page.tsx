@@ -1,15 +1,8 @@
 import Link from "next/link";
-import { Navigation } from "@/components/Navigation";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <header className="w-full flex justify-between items-center py-4">
-        <Link href="/" className="text-xl font-semibold hover:opacity-80">
-          Kayla Writes
-        </Link>
-        <Navigation />
-      </header>
+    <div className="grid grid-rows-[1fr_20px] items-center justify-items-center min-h-[calc(100vh-64px)] p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="max-w-4xl w-full mx-auto">
         <div className="space-y-8">
           <h1 className="text-5xl font-bold">Welcome to My Writing Journey</h1>
