@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
@@ -7,12 +5,12 @@ export default function AboutPage() {
       <div className="grid md:grid-cols-[2fr_1fr] gap-12">
         <div className="space-y-6">
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Hi, I'm Kayla! I'm a writer passionate about storytelling and creative expression. 
-            With a background in literature and creative writing, I've dedicated my career to 
+            Hi, I&apos;m Kayla! I&apos;m a writer passionate about storytelling and creative expression. 
+            With a background in literature and creative writing, I&apos;ve dedicated my career to 
             crafting compelling narratives that resonate with readers.
           </p>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-            When I'm not writing, you can find me exploring local bookstores, hiking in nature, 
+            When I&apos;m not writing, you can find me exploring local bookstores, hiking in nature, 
             or experimenting with new recipes in my kitchen. I believe that every experience 
             feeds into the stories we tell.
           </p>

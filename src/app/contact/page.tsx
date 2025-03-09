@@ -7,7 +7,7 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-12">
         <div className="space-y-6">
           <p className="text-gray-600 dark:text-gray-300">
-            I'd love to hear from you! Whether you have a writing project in mind 
+            I&apos;d love to hear from you! Whether you have a writing project in mind 
             or just want to connect, feel free to reach out using the form below.
           </p>
           <form className="space-y-4">

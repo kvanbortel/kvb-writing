@@ -14,7 +14,7 @@ export default function Home() {
         <div className="space-y-8">
           <h1 className="text-5xl font-bold">Welcome to My Writing Journey</h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-            I'm Kayla, a writer exploring the intersection of storytelling, creativity, 
+            I&apos;m Kayla, a writer exploring the intersection of storytelling, creativity, 
             and human experience. Through my work, I aim to inspire, connect, and share 
             meaningful stories with readers around the world.
           </p>
