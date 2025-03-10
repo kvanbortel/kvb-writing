@@ -27,7 +27,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="apple-mobile-web-app-title" content="Kayla Writes" />
-        <link rel="preload" as="image" href="/kvb-writing/Kayla2023.jpg"></link>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
