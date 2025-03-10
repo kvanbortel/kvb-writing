@@ -96,7 +96,7 @@ export default function CharactersPage() {
                 <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl">
                   <Image
                     src="/kvb-writing/characters/Nikolas.png"
-                    alt="Nikolas, the Lord of the Dead, in a detailed character portrait"
+                    alt="Nikolas, the Lord of the Dead, in a character portrait"
                     fill
                     className="object-cover"
                   />
