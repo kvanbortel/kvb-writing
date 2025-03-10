@@ -22,7 +22,7 @@ export default function AboutPage() {
         </div>
         <div className="relative aspect-[2/3] rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
           <Image
-            src="/kvb-writing/Kayla2023.jpg"
+            src="/kvb-writing/Kayla2023-small.png"
             alt="Kayla Van Bortel"
             fill
             sizes="(min-width: 768px) 33vw, 100vw"
