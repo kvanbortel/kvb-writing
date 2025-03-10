@@ -32,8 +32,8 @@ export default function CharactersPage() {
         <div className="grid gap-24">
           {/* Kate */}
           <article className="relative">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl order-2 md:order-1">
                 <Image
                   src="/kvb-writing/characters/Kate.png"
                   alt="Kate, a determined student, in a character portrait"
@@ -42,7 +42,7 @@ export default function CharactersPage() {
                   priority
                 />
               </div>
-              <div className="space-y-6">
+              <div className="space-y-6 order-1 md:order-2">
                 <div className="space-y-2">
                   <h3 className="text-3xl font-medium text-purple-600 dark:text-purple-400">Kate</h3>
                   <span className="inline-block px-4 py-1 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-full text-sm">
@@ -60,8 +60,16 @@ export default function CharactersPage() {
 
           {/* Luko */}
           <article className="relative">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6 md:order-2">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl order-2 md:order-1">
+                <Image
+                  src="/kvb-writing/characters/Luko.png"
+                  alt="Luko, a distinguished professor, in a character portrait"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="space-y-6 order-1 md:order-2">
                 <div className="space-y-2">
                   <h3 className="text-3xl font-medium text-purple-600 dark:text-purple-400">Luko</h3>
                   <span className="inline-block px-4 py-1 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-full text-sm">
@@ -74,29 +82,21 @@ export default function CharactersPage() {
                   Nikolas adds layers of tension to the narrative.
                 </p>
               </div>
-              <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl md:order-1">
-                <Image
-                  src="/kvb-writing/characters/Luko.png"
-                  alt="Luko, a distinguished professor, in a character portrait"
-                  fill
-                  className="object-cover"
-                />
-              </div>
             </div>
           </article>
 
           {/* Nikolas */}
           <article className="relative">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl order-2 md:order-1">
                 <Image
                   src="/kvb-writing/characters/Nikolas.png"
-                  alt="Nikolas, the Lord of the Dead, in a character portrait"
+                  alt="Nikolas, the Lord of the Dead, in a detailed character portrait"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="space-y-6">
+              <div className="space-y-6 order-1 md:order-2">
                 <div className="space-y-2">
                   <h3 className="text-3xl font-medium text-purple-600 dark:text-purple-400">Nikolas</h3>
                   <span className="inline-block px-4 py-1 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-full text-sm">
