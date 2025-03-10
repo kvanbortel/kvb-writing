@@ -1,4 +1,14 @@
 import { Target, Calendar } from 'lucide-react';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Current Projects",
+  description: "Follow the progress of 'Out of Nowhere (OON)', a fantasy novel about a young scholar and a magic academy professor, along with other upcoming writing projects.",
+  openGraph: {
+    title: "Current Projects | Kayla Writes",
+    description: "Follow the progress of 'Out of Nowhere (OON)', a fantasy novel about a young scholar and a magic academy professor, along with other upcoming writing projects.",
+  }
+};
 
 export default function ProjectsPage() {
   // Project variables

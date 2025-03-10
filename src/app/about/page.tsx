@@ -1,4 +1,14 @@
 import Image from 'next/image';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description: "Learn about Kayla Van Bortel, a passionate writer exploring storytelling through fantasy novels, short fiction, and interactive narratives. Creative Writing student and avid storyteller.",
+  openGraph: {
+    title: "About Kayla Van Bortel | Kayla Writes",
+    description: "Learn about Kayla Van Bortel, a passionate writer exploring storytelling through fantasy novels, short fiction, and interactive narratives. Creative Writing student and avid storyteller.",
+  }
+};
 
 export default function AboutPage() {
   return (
