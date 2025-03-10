@@ -18,53 +18,60 @@ export default function ProjectsPage() {
 
   return (
     <main className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold mb-8">Current Projects</h1>
+      <h1 className="text-4xl font-bold mb-12">Current Projects</h1>
       
       {/* Project Card */}
-      <article className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-8">
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold">Out of Nowhere (OON)</h2>
-          
-          {/* Progress Section */}
-          <div className="flex items-center gap-4">
-            <div className="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-100 px-4 py-1 rounded-full text-sm font-medium" role="status">
-              First Draft (Rewrite)
-            </div>
-            <div className="text-gray-600 dark:text-gray-300 font-mono" aria-label={`Current word count: ${currentWordCount.toLocaleString()} words`}>
-              {currentWordCount.toLocaleString()} words
+      <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12">
+        <div className="space-y-8">
+          {/* Header Section */}
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold">Out of Nowhere</h2>
+            <div className="flex flex-wrap items-center gap-4">
+              <div className="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-100 px-4 py-1.5 rounded-full text-sm font-medium" role="status">
+                First Draft (Rewrite)
+              </div>
+              <div className="text-gray-600 dark:text-gray-300 font-mono text-sm tracking-tight" aria-label={`Current word count: ${currentWordCount.toLocaleString()} words`}>
+                {currentWordCount.toLocaleString()} words
+              </div>
             </div>
           </div>
 
           {/* Progress Bar */}
-          <div 
-            role="progressbar" 
-            aria-valuenow={progressPercentage} 
-            aria-valuemin={0} 
-            aria-valuemax={100}
-            aria-label={`Writing progress: ${progressPercentage}% of target word count`}
-            className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
-          >
+          <div className="space-y-2">
             <div 
-              className="bg-purple-500 h-2.5 rounded-full transition-all duration-500" 
-              style={{ width: `${progressPercentage}%` }}
-            />
+              role="progressbar" 
+              aria-valuenow={progressPercentage} 
+              aria-valuemin={0} 
+              aria-valuemax={100}
+              aria-label={`Writing progress: ${progressPercentage}% of target word count`}
+              className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3"
+            >
+              <div 
+                className="bg-purple-500 h-3 rounded-full transition-all duration-500" 
+                style={{ width: `${progressPercentage}%` }}
+              />
+            </div>
+            <div className="flex justify-between text-sm">
+              <span className="text-purple-600 dark:text-purple-300 font-medium">{progressPercentage}% complete</span>
+              <span className="text-gray-500 dark:text-gray-400">{(targetWordCount - currentWordCount).toLocaleString()} words remaining</span>
+            </div>
           </div>
 
-          {/* Current Stage Description */}
-          <div className="prose dark:prose-invert space-y-6">
-            <p className="text-gray-600 dark:text-gray-300">
+          {/* Project Description */}
+          <div className="prose dark:prose-invert max-w-none space-y-4">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               This fantasy novel follows a young scholar in over her head in the city of her dreams
               and a magic academy professor facing the return of one of his greatest students...
               who has the intent to kill. Welcome to the drama and human side 250-years-young
               legendary oligarchs, a city as perilous as it is full of promise, and characters who run
               as deep as their secrets. I hope you fall in love with them as much as I have.
             </p>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               The first draft totaled 138,000 words, and then I tore it apart over the course of a month.
               Tweaks didn&apos;t cut the grand image I had in mind, so now I&apos;m working on a complete rewrite
               and loving every moment.
             </p>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               I&apos;m knee-deep in balancing carefully planned character arcs, layered themes, immersive settings,
               and intimate emotions refined over years of dedication to this project. I&apos;m in love, I&apos;m
               obsessed, and this rewrite is the one.
@@ -72,33 +79,32 @@ export default function ProjectsPage() {
           </div>
 
           {/* Project Details */}
-          <dl className="grid grid-cols-2 gap-4 text-sm" aria-label="Project details">
-            <div className="flex items-center gap-2">
-              <Target className="w-4 h-4 text-purple-500" aria-hidden="true" />
+          <div className="grid sm:grid-cols-2 gap-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                <Target className="w-5 h-5 text-purple-500" aria-hidden="true" />
+              </div>
               <div>
-                <dt className="text-gray-500 dark:text-gray-400">Target Word Count</dt>
+                <dt className="text-sm text-gray-500 dark:text-gray-400">Target Word Count</dt>
                 <dd className="font-medium text-purple-600 dark:text-purple-300">{targetWordCount.toLocaleString()}</dd>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-purple-500" aria-hidden="true" />
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                <Calendar className="w-5 h-5 text-purple-500" aria-hidden="true" />
+              </div>
               <div>
-                <dt className="text-gray-500 dark:text-gray-400">Started</dt>
+                <dt className="text-sm text-gray-500 dark:text-gray-400">Started</dt>
                 <dd className="font-medium text-purple-600 dark:text-purple-300">May 2024</dd>
               </div>
             </div>
-          </dl>
-
-          {/* Progress Stats */}
-          <div className="text-sm text-gray-500 dark:text-gray-400" aria-live="polite">
-            <span className="text-purple-600 dark:text-purple-300 font-medium">{progressPercentage}% complete</span> • {(targetWordCount - currentWordCount).toLocaleString()} words remaining
           </div>
         </div>
       </article>
 
       {/* Future Projects Section */}
-      <section className="border-t border-gray-200 dark:border-gray-700 pt-8">
-        <h2 className="text-2xl font-semibold mb-4">Future Projects</h2>
+      <section className="border-t border-gray-200 dark:border-gray-700 pt-12">
+        <h2 className="text-2xl font-semibold mb-6">Future Projects</h2>
         <p className="text-gray-600 dark:text-gray-300">
           More exciting projects coming soon! Stay tuned for updates.
         </p>
