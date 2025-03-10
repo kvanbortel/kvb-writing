@@ -6,9 +6,9 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 const MENU_ITEMS = [
+  { href: '/about', label: 'About' },
   { href: '/projects', label: 'Projects' },
   { href: '/resources', label: 'Resources' },
-  { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
 
