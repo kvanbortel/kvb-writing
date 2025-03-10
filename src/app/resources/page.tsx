@@ -46,7 +46,7 @@ export default function ResourcesPage() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
+    <main className="max-w-4xl mx-auto px-6 py-12">
       <h1 className="text-4xl font-bold mb-8">Writing Resources</h1>
       <p className="text-gray-600 dark:text-gray-300 mb-12">
         Here are some of my favorite tools that help me in my writing journey. 
@@ -54,21 +54,25 @@ export default function ResourcesPage() {
         become an essential part of my creative process.
       </p>
 
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6">Thesauri & Word Tools</h2>
-        <div className="grid gap-6">
+      <section className="mb-12" aria-labelledby="thesauri-heading">
+        <h2 id="thesauri-heading" className="text-2xl font-semibold mb-6">Thesauri & Word Tools</h2>
+        <div className="grid gap-6" role="list">
           {thesauri.map((tool) => (
             <div 
               key={tool.name}
-              className="p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors"
+              className="p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
+              role="listitem"
             >
               <a 
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
+                className="block focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-md"
+                aria-label={`Visit ${tool.name} (opens in new tab)`}
               >
-                <h3 className="text-xl font-medium mb-2 text-purple-500">{tool.name}</h3>
+                <h3 className="text-xl font-medium mb-2 text-purple-500 group-hover:text-purple-600 transition-colors">
+                  {tool.name}
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300">{tool.description}</p>
               </a>
             </div>
@@ -76,27 +80,31 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mb-6">Character Name Resources</h2>
-        <div className="grid gap-6">
+      <section aria-labelledby="names-heading">
+        <h2 id="names-heading" className="text-2xl font-semibold mb-6">Character Name Resources</h2>
+        <div className="grid gap-6" role="list">
           {nameGenerators.map((tool) => (
             <div 
               key={tool.name}
-              className="p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors"
+              className="p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
+              role="listitem"
             >
               <a 
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
+                className="block focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-md"
+                aria-label={`Visit ${tool.name} (opens in new tab)`}
               >
-                <h3 className="text-xl font-medium mb-2 text-purple-500">{tool.name}</h3>
+                <h3 className="text-xl font-medium mb-2 text-purple-500 group-hover:text-purple-600 transition-colors">
+                  {tool.name}
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300">{tool.description}</p>
               </a>
             </div>
           ))}
         </div>
       </section>
-    </div>
+    </main>
   );
 } 

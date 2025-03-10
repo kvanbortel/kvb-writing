@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "@/components/Header";
+import { SkipLink } from "@/components/SkipLink";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <meta name="apple-mobile-web-app-title" content="Kayla Writes" />
       </head>
@@ -45,8 +46,14 @@ export default function RootLayout({
             gtag('config', 'G-6N6DG6XJWC');
           `}
         </Script>
+        <SkipLink />
         <Header />
-        {children}
+        <div id="main-content" tabIndex={-1} className="outline-none">
+          {children}
+        </div>
+        <footer className="mt-auto py-8 text-center text-sm text-gray-500">
+          <p>© {new Date().getFullYear()} Kayla Writes. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );
