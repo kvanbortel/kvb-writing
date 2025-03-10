@@ -60,14 +60,14 @@ export default function ResourcesPage() {
           {thesauri.map((tool) => (
             <div 
               key={tool.name}
-              className="p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
+              className="rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
               role="listitem"
             >
               <a 
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-md"
+                className="block p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-4 dark:focus-visible:ring-offset-gray-900"
                 aria-label={`Visit ${tool.name} (opens in new tab)`}
               >
                 <h3 className="text-xl font-medium mb-2 text-purple-500 group-hover:text-purple-600 transition-colors">
@@ -86,14 +86,14 @@ export default function ResourcesPage() {
           {nameGenerators.map((tool) => (
             <div 
               key={tool.name}
-              className="p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
+              className="rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
               role="listitem"
             >
               <a 
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-md"
+                className="block p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-4 dark:focus-visible:ring-offset-gray-900"
                 aria-label={`Visit ${tool.name} (opens in new tab)`}
               >
                 <h3 className="text-xl font-medium mb-2 text-purple-500 group-hover:text-purple-600 transition-colors">
