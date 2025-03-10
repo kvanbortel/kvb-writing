@@ -33,12 +33,23 @@ export default function ProjectsPage() {
           </div>
 
           {/* Current Stage Description */}
-          <div className="prose dark:prose-invert">
+          <div className="prose dark:prose-invert, space-y-6">
             <p className="text-gray-600 dark:text-gray-300">
-              Currently working through the first draft, focusing on getting the main plot points 
-              and character arcs established. The story follows a young woman who discovers she 
-              has the ability to travel through parallel universes, but each jump comes with 
-              unexpected consequences.
+              This fantasy novel follows a young scholar in over her head in the city of her dreams
+              and a magic academy professor facing the return of one of his greatest students...
+              who has the intent to kill. Welcome to the drama and human side 250-years-young
+              legendary oligarchs, a city as perilous as it is full of promise, and characters who run
+              as deep as their secrets. I hope you fall in love with them as much as I have.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300">
+              The first draft totaled 138,000 words, and then I tore it apart over the course of a month.
+              Tweaks didn&apos;t cut the grand image I had in mind, so now I&apos;m working on a complete rewrite
+              and loving every moment.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300">
+              I&apos;m knee-deep in balancing carefully planned character arcs, layered themes, immersive settings,
+              and intimate emotions refined over years of dedication to this project. I&apos;m in love, I&apos;m
+              obsessed, and this rewrite is the one.
             </p>
           </div>
 

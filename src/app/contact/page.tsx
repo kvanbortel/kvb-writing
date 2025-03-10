@@ -7,7 +7,7 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-12">
         <div className="space-y-6">
           <p className="text-gray-600 dark:text-gray-300">
-            I&apos;d love to hear from you! Whether you have a writing project in mind 
+            I&apos;d love to hear from you! Whether you have an inquiry 
             or just want to connect, feel free to reach out using the form below.
           </p>
           <form className="space-y-4">
@@ -56,17 +56,9 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Other Ways to Connect</h2>
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
-              <p>Email: hello@kaylawritesbooks.com</p>
-              <p>Twitter: @kaylawritesbooks</p>
-              <p>Instagram: @kaylawritesbooks</p>
+              <p>Email: kaylavb4@gmail.com</p>
+              <p>Tumblr: @kaylas-words</p>
             </div>
-          </div>
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">Office Hours</h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Monday - Friday<br />
-              9:00 AM - 5:00 PM EST
-            </p>
           </div>
         </div>
       </div>
