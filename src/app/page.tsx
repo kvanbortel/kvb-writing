@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Send } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -33,10 +34,11 @@ export default function Home() {
             </a>
             <Link
               href="/contact"
-              className="inline-flex px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
               aria-label="Get in touch through the contact form"
             >
-              Get in Touch
+              <Send className="w-5 h-5" aria-hidden="true" />
+              <span>Get in Touch</span>
             </Link>
           </nav>
         </div>

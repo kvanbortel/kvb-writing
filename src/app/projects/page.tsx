@@ -1,3 +1,5 @@
+import { Target, Calendar } from 'lucide-react';
+
 export default function ProjectsPage() {
   // Project variables
   const currentWordCount = 82761;
@@ -61,13 +63,19 @@ export default function ProjectsPage() {
 
           {/* Project Details */}
           <dl className="grid grid-cols-2 gap-4 text-sm" aria-label="Project details">
-            <div>
-              <dt className="text-gray-500 dark:text-gray-400">Target Word Count</dt>
-              <dd className="font-medium text-purple-600 dark:text-purple-300">{targetWordCount.toLocaleString()}</dd>
+            <div className="flex items-center gap-2">
+              <Target className="w-4 h-4 text-purple-500" aria-hidden="true" />
+              <div>
+                <dt className="text-gray-500 dark:text-gray-400">Target Word Count</dt>
+                <dd className="font-medium text-purple-600 dark:text-purple-300">{targetWordCount.toLocaleString()}</dd>
+              </div>
             </div>
-            <div>
-              <dt className="text-gray-500 dark:text-gray-400">Started</dt>
-              <dd className="font-medium text-purple-600 dark:text-purple-300">May 2024</dd>
+            <div className="flex items-center gap-2">
+              <Calendar className="w-4 h-4 text-purple-500" aria-hidden="true" />
+              <div>
+                <dt className="text-gray-500 dark:text-gray-400">Started</dt>
+                <dd className="font-medium text-purple-600 dark:text-purple-300">May 2024</dd>
+              </div>
             </div>
           </dl>
 
