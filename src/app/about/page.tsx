@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
@@ -24,10 +26,14 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
-        <div className="relative h-64 md:h-auto rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
-          <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-            [Profile Photo]
-          </div>
+        <div className="relative aspect-[2/3] rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+          <Image
+            src="/kvb-writing/Kayla2023.jpg"
+            alt="Kayla Van Bortel"
+            fill
+            sizes="(min-width: 768px) 33vw, 100vw"
+            priority
+          />
         </div>
       </div>
     </div>
