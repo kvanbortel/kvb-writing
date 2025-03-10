@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div className="grid md:grid-cols-[2fr_1fr] gap-12">
         <div className="space-y-6">
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Hi, I&apos;m Kayla! I&apos;m a writer passionate about storytelling and creative expression. 
+            Hi, I&apos;m Kayla Van Bortel! I&apos;m a writer passionate about storytelling and creative expression. 
             I have been writing and researching the craft for years and now I&apos;m pursuing a Creative Writing minor
             and hunting down any writing groups I can. I&apos;m dedicated to 
             crafting compelling narratives that resonate with readers and transport them to worlds as lively as the
