@@ -76,7 +76,7 @@ export default function ResourcesPage() {
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
           Discover some of my favorite writing tools. From finding the perfect word to naming characters,
-          these resources are valuable for my creative process.
+          these resources are valuable for my creative process, and perhaps you&apos;ll find them useful too.
         </p>
       </div>
 
