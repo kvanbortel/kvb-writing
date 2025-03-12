@@ -30,7 +30,15 @@ export default function ProjectsPage() {
 
   return (
     <main className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold mb-12">Current Projects</h1>
+      <div className="mb-12 space-y-4">
+        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-gray-900 to-gray-600 dark:from-white dark:to-gray-400">
+          Current Projects
+        </h1>
+        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
+          Follow along with my writing journey as I craft stories that blend magic, mystery, and human connection.
+          Here you can track my progress and get insights into my creative process.
+        </p>
+      </div>
       
       {/* Project Card */}
       <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12">

@@ -24,7 +24,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold mb-8">About Me</h1>
+      <div className="mb-12 space-y-4">
+        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-gray-900 to-gray-600 dark:from-white dark:to-gray-400">
+          About Me
+        </h1>
+        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
+          Get to know the person behind the stories.
+        </p>
+      </div>
       <div className="grid md:grid-cols-[2fr_1fr] gap-12">
         <article className="space-y-6">
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">

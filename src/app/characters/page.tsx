@@ -25,11 +25,15 @@ export const metadata: Metadata = {
 export default function CharactersPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold mb-8">Character Art</h1>
-      <p className="text-gray-600 dark:text-gray-300 mb-12">
-        Visual development is an important part of my writing process. 
-        Here are a few of my characters from my writing.
-      </p>
+      <div className="mb-12 space-y-4">
+        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-gray-900 to-gray-600 dark:from-white dark:to-gray-400">
+          Character Art
+        </h1>
+        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
+          Meet the characters that bring my stories to life. Visual development is an essential part of my creative process,
+          helping me connect with each character on a deeper level.
+        </p>
+      </div>
 
       {/* Project Section with Status Badge */}
       <section className="space-y-16" aria-labelledby="oon-heading">

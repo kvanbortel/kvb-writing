@@ -1,3 +1,26 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Writing Resources",
+  description: "A curated collection of writing tools and resources, from thesauri to name generators, that help shape my creative process.",
+  openGraph: {
+    title: "Writing Resources | Kayla Writes",
+    description: "A curated collection of writing tools and resources, from thesauri to name generators, that help shape my creative process.",
+  }
+};
+
+/**
+ * Resources Page Component
+ * 
+ * Showcases writing tools and resources:
+ * - Curated collection of writing aids
+ * - Interactive resource cards with hover states
+ * - Categorized sections for easy navigation
+ * - Accessible external links
+ * - Dark mode compatible styling
+ * 
+ * @component
+ */
 export default function ResourcesPage() {
   const thesauri = [
     {
@@ -47,12 +70,15 @@ export default function ResourcesPage() {
 
   return (
     <main className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold mb-8">Writing Resources</h1>
-      <p className="text-gray-600 dark:text-gray-300 mb-12">
-        Here are some of my favorite tools that help me in my writing journey. 
-        From finding the perfect word to naming characters, these resources have 
-        become an essential part of my creative process.
-      </p>
+      <div className="mb-12 space-y-4">
+        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-gray-900 to-gray-600 dark:from-white dark:to-gray-400">
+          Writing Resources
+        </h1>
+        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
+          Discover some of my favorite writing tools. From finding the perfect word to naming characters,
+          these resources are valuable for my creative process.
+        </p>
+      </div>
 
       <section className="mb-12" aria-labelledby="thesauri-heading">
         <h2 id="thesauri-heading" className="text-2xl font-semibold mb-6">Thesauri & Word Tools</h2>
