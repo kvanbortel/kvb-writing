@@ -21,7 +21,7 @@ export default function Home() {
             <h1 id="main-heading" className="text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-gray-900 to-gray-600 dark:from-white dark:to-gray-400">
               Welcome to My Writing Journey
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl text-justify">
               I&apos;m <span className="text-purple-600 dark:text-purple-400 font-medium">Kayla Van Bortel</span>, a writer exploring the intersection of traditional storytelling and visual media.
               I&apos;m a novelist at heart, but I also write short fiction, draw my characters a dozen times over,
               and dabble with interactive Twine stories. Through my work, I aim to inspire, connect, and share 

@@ -71,19 +71,19 @@ export default function ProjectsPage() {
 
           {/* Project Description */}
           <div className="prose dark:prose-invert max-w-none space-y-4">
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
               This fantasy novel follows a young scholar in over her head in the city of her dreams
               and a magic academy professor facing the return of one of his greatest students...
               who has the intent to kill. Welcome to the drama and human side 250-years-young
               legendary oligarchs, a city as perilous as it is full of promise, and characters who run
               as deep as their secrets. I hope you fall in love with them as much as I have.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
               The first draft totaled 138,000 words, and then I tore it apart over the course of a month.
               Tweaks didn&apos;t cut the grand image I had in mind, so now I&apos;m working on a complete rewrite
               and loving every moment.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
               I&apos;m knee-deep in balancing carefully planned character arcs, layered themes, immersive settings,
               and intimate emotions refined over years of dedication to this project. I&apos;m in love, I&apos;m
               obsessed, and this rewrite is the one.

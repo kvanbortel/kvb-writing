@@ -63,7 +63,7 @@ export default function CharactersPage() {
                     The Student
                   </span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-justify">
                   A young scholar whose ambition leads her into a world of danger and discovery. 
                   Her journey from student to key player in the unfolding events drives the story&apos;s 
                   central conflict.
@@ -90,7 +90,7 @@ export default function CharactersPage() {
                     The Professor / The Lord of Illusion
                   </span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-justify">
                   A respected professor at the magic academy who faces the return of one of his 
                   greatest students with deadly intent. His complex relationship with both Kate and 
                   Nikolas adds layers of tension to the narrative.
@@ -117,7 +117,7 @@ export default function CharactersPage() {
                     The Mentor / The Lord of the Dead
                   </span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-justify">
                   Wholesome at times and scary at others. Nikolas&apos;s deep history and entanglement with
                   Luko and his past student drive much of the emotional conflict.
                 </p>
