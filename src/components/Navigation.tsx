@@ -13,6 +13,19 @@ const MENU_ITEMS = [
   { href: '/contact', label: 'Contact' },
 ];
 
+/**
+ * Navigation Component
+ * 
+ * Main navigation menu featuring:
+ * - Responsive desktop/mobile layouts
+ * - Mobile hamburger menu with animations
+ * - Active link highlighting
+ * - Keyboard navigation support
+ * - Escape key handling for mobile menu
+ * - Focus management
+ * 
+ * @component
+ */
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();

@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { Send } from 'lucide-react';
 
+/**
+ * Home Page Component
+ * 
+ * The landing page of the website featuring:
+ * - A hero section with personal introduction
+ * - Responsive typography
+ * - Dark mode support
+ * - Accessible semantic structure
+ * 
+ * @component
+ */
 export default function Home() {
   return (
     <div className="flex items-center justify-center min-h-[calc(100vh-64px)] p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">

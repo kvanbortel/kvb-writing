@@ -59,6 +59,20 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Root Layout Component
+ * 
+ * Application-wide layout wrapper featuring:
+ * - HTML document structure
+ * - Font loading (Geist Sans and Mono)
+ * - Meta tags and SEO configuration
+ * - Google Analytics integration
+ * - Skip link for accessibility
+ * - Header and footer components
+ * - Dark mode compatibility
+ * 
+ * @component
+ */
 export default function RootLayout({
   children,
 }: Readonly<{

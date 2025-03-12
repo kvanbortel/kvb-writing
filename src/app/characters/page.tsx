@@ -10,6 +10,18 @@ export const metadata: Metadata = {
   }
 };
 
+/**
+ * Characters Page Component
+ * 
+ * Displays character artwork and descriptions for the "Out of Nowhere" project.
+ * Layout is responsive with different arrangements for mobile and desktop:
+ * - Mobile: Text above, image below
+ * - Desktop: Image left (fixed), text right
+ * 
+ * Images use Next.js Image component with aspect ratio 3:4 for consistent sizing.
+ * 
+ * @component
+ */
 export default function CharactersPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12">
@@ -19,6 +31,7 @@ export default function CharactersPage() {
         Here are a few of my characters from my writing.
       </p>
 
+      {/* Project Section with Status Badge */}
       <section className="space-y-16" aria-labelledby="oon-heading">
         <div className="text-center">
           <div className="inline-flex items-center gap-4 px-6 py-2 rounded-2xl bg-purple-50 dark:bg-purple-900/10">
@@ -29,6 +42,7 @@ export default function CharactersPage() {
           </div>
         </div>
 
+        {/* Character Cards Grid */}
         <div className="grid gap-24">
           {/* Kate */}
           <article className="relative">

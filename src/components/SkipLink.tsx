@@ -1,3 +1,15 @@
+/**
+ * Skip Link Component
+ * 
+ * Accessibility component featuring:
+ * - Screen reader only visibility by default
+ * - Visible on focus for keyboard navigation
+ * - Styled to match site theme
+ * - High contrast for visibility
+ * - Z-index management for overlay
+ * 
+ * @component
+ */
 export function SkipLink() {
   return (
     <a

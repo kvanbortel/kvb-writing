@@ -10,6 +10,17 @@ export const metadata: Metadata = {
   }
 };
 
+/**
+ * About Page Component
+ * 
+ * Personal biography page featuring:
+ * - Two-column layout with text and image on desktop
+ * - Responsive design that stacks on mobile
+ * - Optimized profile image with priority loading
+ * - Dark mode compatible styling
+ * 
+ * @component
+ */
 export default function AboutPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12">

@@ -1,6 +1,18 @@
 import Link from "next/link";
 import { Navigation } from "./Navigation";
 
+/**
+ * Header Component
+ * 
+ * Site-wide header component featuring:
+ * - Sticky positioning with shadow effect
+ * - Brand link with hover states
+ * - Navigation menu integration
+ * - Responsive padding and max width
+ * - Accessible landmark role
+ * 
+ * @component
+ */
 export function Header() {
   return (
     <header className="sticky top-0 w-full bg-[#7a4877] text-white z-50 shadow-lg shadow-[#7a4877]/10" role="banner">

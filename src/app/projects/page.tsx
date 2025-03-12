@@ -10,6 +10,18 @@ export const metadata: Metadata = {
   }
 };
 
+/**
+ * Projects Page Component
+ * 
+ * Showcases current and future writing projects:
+ * - Project card with detailed progress tracking
+ * - Interactive progress bar with percentage
+ * - Project metadata (word count, target, start date)
+ * - Responsive layout with icon-based data display
+ * - Dark mode support with themed status badges
+ * 
+ * @component
+ */
 export default function ProjectsPage() {
   // Project variables
   const currentWordCount = 86966;

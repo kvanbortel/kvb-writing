@@ -10,6 +10,18 @@ export const metadata: Metadata = {
   }
 };
 
+/**
+ * Contact Page Component
+ * 
+ * Contact form page featuring:
+ * - Embedded Google Form integration
+ * - Loading state management
+ * - Responsive layout with consistent spacing
+ * - SEO optimization with metadata
+ * - Accessible form structure
+ * 
+ * @component
+ */
 export default function ContactPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12">

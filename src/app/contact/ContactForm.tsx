@@ -3,6 +3,18 @@
 import { useState } from 'react';
 import { Loader2 } from 'lucide-react';
 
+/**
+ * Contact Form Component
+ * 
+ * Client-side form component featuring:
+ * - Embedded Google Form
+ * - Loading state with spinner animation
+ * - Accessible loading indicators
+ * - Dark mode compatible background
+ * - Responsive iframe sizing
+ * 
+ * @component
+ */
 export function ContactForm() {
   const [isLoading, setIsLoading] = useState(true);
 
