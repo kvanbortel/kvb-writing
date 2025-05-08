@@ -69,7 +69,7 @@ export default function CharactersPage() {
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-justify">
                   A young scholar whose ambition leads her into a world of danger and discovery. 
-                  She wants acceptance but events force her to cross the line.
+                  She wants acceptance, but she&apos;s forced to cross the line.
                 </p>
               </div>
             </div>
@@ -94,8 +94,8 @@ export default function CharactersPage() {
                   </span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-justify">
-                  A respected professor at the magic academy whose greatest student returns... with deadly intent.
-                  He&apos;s dutiful but petty; protective but strict, and forced to face the hardest decision of his
+                  A respected professor at the magic academy whose greatest student returns with deadly intent.
+                  He&apos;s dutiful but petty, protective but strict, and forced to face the hardest decision of his
                   life.
                 </p>
               </div>
@@ -121,7 +121,7 @@ export default function CharactersPage() {
                   </span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-justify">
-                  Wholesome at times and scary at others. Nikolas is deeply entangled with
+                  Wholesome at times and frightening at others. Nikolas is deeply entangled with
                   Luko and his former student. He&apos;s the greatest protector the city has left, but he&apos;s
                   haunted... and afraid to admit that he might not be enough to save them.
                 </p>
