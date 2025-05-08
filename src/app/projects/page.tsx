@@ -82,7 +82,7 @@ export default function ProjectsPage() {
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
               This fantasy novel follows a young scholar in over her head in the city of her dreams
               and a magic academy professor facing the return of one of his greatest students...
-              who has the intent to kill. Welcome to the drama and human side 250-years-young
+              turned murderer. Welcome to the drama and banter of of 250-years-young
               legendary oligarchs, a city as perilous as it is full of promise, and characters who run
               as deep as their secrets. I hope you fall in love with them as much as I have.
             </p>
