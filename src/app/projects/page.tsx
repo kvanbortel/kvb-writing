@@ -24,8 +24,8 @@ export const metadata: Metadata = {
  */
 export default function ProjectsPage() {
   // Project variables
-  const currentWordCount = 86966;
-  const targetWordCount = 110000;
+  const currentWordCount = 105196;
+  const targetWordCount = 120000;
   const progressPercentage = Math.round((currentWordCount / targetWordCount) * 100);
 
   return (
