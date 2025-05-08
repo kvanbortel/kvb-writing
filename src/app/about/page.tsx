@@ -35,20 +35,18 @@ export default function AboutPage() {
       <div className="grid md:grid-cols-[2fr_1fr] gap-12">
         <article className="space-y-6">
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-            Hi, I&apos;m Kayla Van Bortel! I&apos;m a lifelong storyteller from upstate New York, where I&apos;m
-            pursuing a Creative Writing minor and engaging with writing communities whereever I go.
+            Hi, I&apos;m Kayla Van Bortel, a fiction writer from upstate New York. I&apos;m currently
+            pursuing a Creative Writing minor and love engaging with writing communities wherever I go.
           </p>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-            I&apos;m dedicated to crafting immersive narratives with dynamic characters and explorations
-            of the gripping questions that unfold. Though I&apos;m primarily a fantasy writer, I love
-            weaving elements of horror, suspense, and gothic fiction into my stories, balancing eerie atmospheres with
-            softer moments.
+            My stories blend fantasy with elements of horror, suspense, and the gothic, balancing eerie atmospheres
+            and dark questions with softer moments and feet-kicking banter. I love crafting vivid worlds and 
+            layered characters that linger long after the final page.
           </p>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-            When I&apos;m not writing, you can find me exploring bookstores, camping in the
-            Adirondacks, skiing (on snow or water, depending on the season), or sitting in front of a glowing screen,
-            a blanket wrapped around my shoulders, programming in my IDE of choice. I believe every
-            experience feeds into the stories we tell, and embracing that idea makes life all the more exciting.
+            When I&apos;m not writing, I&apos;m likely wandering indie and antiquarian bookstores, camping in the
+            Adirondacks, or programming with a cozy blanket wrapped around my shoulders. I believe stories grow
+            from curiosity, and that every strange, joyful, or quiet moment can shape the next great idea.
           </p>
         </article>
         <figure className="relative aspect-[2/3] rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
