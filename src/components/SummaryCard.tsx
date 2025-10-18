@@ -21,7 +21,14 @@ interface SummaryCardProps {
  * 
  * @component
  */
-export function SummaryCard({ href, icon, title, subtitle, description, footer }: SummaryCardProps) {
+export function SummaryCard({
+  href,
+  icon,
+  title,
+  subtitle,
+  description,
+  footer
+}: SummaryCardProps) {
   const content = (
     <div className="space-y-4">
       <div className="flex items-center gap-3">

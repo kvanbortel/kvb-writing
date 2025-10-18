@@ -206,8 +206,8 @@ export default function FantasyNovelPage() {
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
               So here I go! I&apos;m also trying to cut a few tens of thousands of words. It can be really satisfying
-              to cut, cut, cut &mdash; Hah! I don't have to edit you later because you're <i>gone!</i> But as nice as
-              that is... I also really like to <i>write.</i> It's a balance.
+              to cut, cut, cut &mdash; Hah! I don&apos;t have to edit you later because you&apos;re <i>gone!</i> But as
+              nice as that is... I also really like to <i>write.</i> It&apos;s a balance.
             </p>
           </div>
 

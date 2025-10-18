@@ -1,5 +1,4 @@
-import { ArrowRight, BookOpen, Sparkles } from 'lucide-react';
-import Link from 'next/link';
+import { ArrowRight, BookOpen } from 'lucide-react';
 import type { Metadata } from "next";
 import { SummaryCard } from '@/components/SummaryCard';
 

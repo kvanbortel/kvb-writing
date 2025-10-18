@@ -1,5 +1,4 @@
-import { ArrowRight, Users, Sparkles } from 'lucide-react';
-import Link from 'next/link';
+import { ArrowRight, Users } from 'lucide-react';
 import type { Metadata } from "next";
 import { SummaryCard } from '@/components/SummaryCard';
 

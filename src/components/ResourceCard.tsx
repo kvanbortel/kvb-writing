@@ -17,7 +17,12 @@ interface SummaryCardProps {
  * 
  * @component
  */
-export function ResourceCard({ href, title, description, children }: SummaryCardProps) {
+export function ResourceCard({
+    href,
+    title,
+    description,
+    children
+}: SummaryCardProps) {
     return (
         <div className="rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
             role="listitem"
