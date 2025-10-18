@@ -1,3 +1,4 @@
+import { ResourceCard } from "@/components/ResourceCard";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -84,24 +85,12 @@ export default function ResourcesPage() {
         <h2 id="thesauri-heading" className="text-2xl font-semibold mb-6">Thesauri & Word Tools</h2>
         <div className="grid gap-6" role="list">
           {thesauri.map((tool) => (
-            <div 
+            <ResourceCard
               key={tool.name}
-              className="rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
-              role="listitem"
-            >
-              <a 
-                href={tool.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-4 dark:focus-visible:ring-offset-gray-900"
-                aria-label={`Visit ${tool.name} (opens in new tab)`}
-              >
-                <h3 className="text-xl font-medium mb-2 text-purple-500 group-hover:text-purple-600 transition-colors">
-                  {tool.name}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">{tool.description}</p>
-              </a>
-            </div>
+              href={tool.url}
+              title={tool.name}
+              description={tool.description}
+            />
           ))}
         </div>
       </section>
@@ -110,24 +99,12 @@ export default function ResourcesPage() {
         <h2 id="names-heading" className="text-2xl font-semibold mb-6">Character Name Resources</h2>
         <div className="grid gap-6" role="list">
           {nameGenerators.map((tool) => (
-            <div 
+            <ResourceCard
               key={tool.name}
-              className="rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors group"
-              role="listitem"
-            >
-              <a 
-                href={tool.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-4 dark:focus-visible:ring-offset-gray-900"
-                aria-label={`Visit ${tool.name} (opens in new tab)`}
-              >
-                <h3 className="text-xl font-medium mb-2 text-purple-500 group-hover:text-purple-600 transition-colors">
-                  {tool.name}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">{tool.description}</p>
-              </a>
-            </div>
+              href={tool.url}
+              title={tool.name}
+              description={tool.description}
+            />
           ))}
         </div>
       </section>
