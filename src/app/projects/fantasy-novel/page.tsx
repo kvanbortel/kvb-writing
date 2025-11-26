@@ -131,19 +131,19 @@ export default function FantasyNovelPage() {
               <div className="p-2.5 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
                 <Target className="w-5 h-5 text-purple-500" aria-hidden="true" />
               </div>
-              <div>
+              <dl>
                 <dt className="text-sm text-gray-500 dark:text-gray-400">Target Word Count</dt>
                 <dd className="font-medium text-purple-600 dark:text-purple-300">{targetWordCount.toLocaleString()}</dd>
-              </div>
+              </dl>
             </div>
             <div className="flex items-center gap-3">
               <div className="p-2.5 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
                 <Calendar className="w-5 h-5 text-purple-500" aria-hidden="true" />
               </div>
-              <div>
+              <dl>
                 <dt className="text-sm text-gray-500 dark:text-gray-400">Started</dt>
                 <dd className="font-medium text-purple-600 dark:text-purple-300">May 2024</dd>
-              </div>
+              </dl>
             </div>
           </div>
         </div>
@@ -217,19 +217,19 @@ export default function FantasyNovelPage() {
               <div className="p-2.5 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
                 <BookOpen className="w-5 h-5 text-purple-500" aria-hidden="true" />
               </div>
-              <div>
+              <dl>
                 <dt className="text-sm text-gray-500 dark:text-gray-400">Total Chapters</dt>
                 <dd className="font-medium text-purple-600 dark:text-purple-300">{totalChapters}</dd>
-              </div>
+              </dl>
             </div>
             <div className="flex items-center gap-3">
               <div className="p-2.5 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
                 <Calendar className="w-5 h-5 text-purple-500" aria-hidden="true" />
               </div>
-              <div>
+              <dl>
                 <dt className="text-sm text-gray-500 dark:text-gray-400">Started</dt>
                 <dd className="font-medium text-purple-600 dark:text-purple-300">July 2025</dd>
-              </div>
+              </dl>
             </div>
           </div>
         </div>
